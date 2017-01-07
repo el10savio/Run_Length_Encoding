@@ -15,11 +15,11 @@ while(counter<len(a)):
     if x==a[counter]:
       num+=1
     else:
-      k.extend([num,a[counter-1]])
+      k.extend([num,':',a[counter-1],'/'])
       num=1
     x=a[counter]
     counter+=1
-k.extend([num,a[counter-1]])
+k.extend([num,':',a[counter-1],'/'])
 
 k = ''.join(str(e) for e in k)
 print '\nEncoded- ',k
